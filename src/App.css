@@ -1,38 +1,103 @@
-.App {
+/* Стили для списка */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Стили для элементов списка */
+.acc_item {
   text-align: center;
+  border: 2px solid gray;
+  min-width: 400px;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Стили для заголовка */
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  grid-gap: 16px;
+}
+/* Стили для изображения */
+img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Стили для кнопки */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Header container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Logo styles */
+.logo img {
+  width: 100px; /* Adjust as needed */
+}
+
+/* Navigation styles */
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation ul li {
+  margin-right: 20px;
+}
+
+.navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Cart styles */
+.cart img {
+  width: 30px; /* Adjust as needed */
+}
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.cart__list {
   display: flex;
   flex-direction: column;
+}
+.cart__item {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 30px;
+  padding-left: 20px;
 }
